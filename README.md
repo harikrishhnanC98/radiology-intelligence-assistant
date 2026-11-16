@@ -74,8 +74,8 @@ User query / X-ray image
         │
         ▼
 ┌─────────────────────┐     ┌──────────────────────┐
-│  sentence-transformer│    │   DenseNet121        │
-│  (text embedding)    │    │   (image classifier) │
+│ sentence-transformer│     │   DenseNet121        │
+│ (text embedding)    │     │   (image classifier) │
 └────────┬────────────┘     └──────────┬───────────┘
          │                             │
          ▼                             ▼
