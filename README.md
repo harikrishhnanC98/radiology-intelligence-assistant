@@ -74,14 +74,14 @@ User query / X-ray image
         │
         ▼
 ┌─────────────────────┐     ┌──────────────────────┐
-│  sentence-transformer│     │   DenseNet121         │
-│  (text embedding)    │     │   (image classifier)  │
+│  sentence-transformer│    │   DenseNet121        │
+│  (text embedding)    │    │   (image classifier) │
 └────────┬────────────┘     └──────────┬───────────┘
          │                             │
          ▼                             ▼
 ┌─────────────────────────────────────────────────┐
-│              FAISS Vector Index                  │
-│         (3,337 radiology reports)                │
+│              FAISS Vector Index                 │
+│         (3,337 radiology reports)               │
 └────────────────────┬────────────────────────────┘
                      │
                      ▼
@@ -89,8 +89,8 @@ User query / X-ray image
                      │
                      ▼
          ┌───────────────────────┐
-         │   llama3.2:3b (Ollama) │
-         │   Clinical Summary     │
+         │   llama3.2:3b (Ollama)│
+         │   Clinical Summary    │
          └───────────────────────┘
 ```
 
