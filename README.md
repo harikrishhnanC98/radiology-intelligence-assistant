@@ -1,6 +1,6 @@
 # Radiology Intelligence Assistant
 
-An AI-powered radiology report search and X-ray analysis tool that runs entirely on-premise — no cloud, no external API calls, fully GDPR compliant.
+An AI-powered radiology report search and X-ray analysis tool that runs entirely on-premise - no cloud, no external API calls, fully GDPR compliant.
 
 Built as a proof-of-concept for intelligent search over hospital PACS report archives.
 
@@ -8,11 +8,11 @@ Built as a proof-of-concept for intelligent search over hospital PACS report arc
 
 ## What it does
 
-**Tab 1 — Report Search**
+**Tab 1 - Report Search**
 
 Semantic search over 3,337 real radiology reports from the Indiana University chest X-ray dataset. Type a clinical term or finding and the system retrieves the most relevant historical reports using vector similarity search (FAISS + sentence-transformers). A local LLM (llama3.2:3b via Ollama) then summarises the top results into a clinical insight.
 
-**Tab 2 — X-ray Analysis**
+**Tab 2 - X-ray Analysis**
 
 Upload a chest X-ray image. A DenseNet121 vision model classifies the likelihood of 14 chest conditions (cardiomegaly, effusion, pneumonia, atelectasis, etc.). The system then automatically searches the report archive for historical cases matching those findings and generates an AI summary.
 
@@ -20,7 +20,7 @@ Upload a chest X-ray image. A DenseNet121 vision model classifies the likelihood
 
 ## Why it matters for hospitals
 
-Most AI tools in medical imaging call external cloud APIs — which makes them illegal under GDPR for German hospitals. This system runs 100% locally:
+Most AI tools in medical imaging call external cloud APIs - which makes them illegal under GDPR for German hospitals. This system runs 100% locally:
 
 - Embedding model: `all-MiniLM-L6-v2` (cached locally)
 - Vector index: FAISS (in-memory, on-device)
@@ -98,7 +98,7 @@ User query / X-ray image
 
 ## Dataset
 
-Indiana University Chest X-ray Collection — 3,337 radiology reports from Indiana University Hospital, made available as an open-access research dataset via the NIH Open-i platform.
+Indiana University Chest X-ray Collection - 3,337 radiology reports from Indiana University Hospital, made available as an open-access research dataset via the NIH Open-i platform.
 
 License: CC BY-NC-ND 4.0
 
